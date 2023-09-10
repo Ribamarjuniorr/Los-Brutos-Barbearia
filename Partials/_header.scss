@@ -1,11 +1,19 @@
 header{
     width: 100%;
 }
-.header.content{
+.header-content {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+
 }
 i {
-    color: $white-dark;
+    color: $terceira-dark;
+}
+.header-icons{
+    display: flex;
+    gap: 15px;
+}
+.header-icons a:hover {
+    color: $ultima-cor;
 }

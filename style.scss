@@ -12,8 +12,21 @@ body{
     width: 100%;
     height: 100vh;
     position: relative;
-    background-color: $auxiliar-ligth;
+    background-color: $primeira-cor;
 
+}
+button {
+    font-family: 'Sora' sans-serif;
+    cursor: pointer;
+}
+svg {
+    width: 100%;
 
-    
+}
+img {
+    width: 100%;
+}
+a {
+    cursor: pointer;
+    text-decoration: none;
 }
