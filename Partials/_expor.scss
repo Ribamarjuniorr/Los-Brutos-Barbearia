@@ -20,7 +20,7 @@
     z-index: -1;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 50% 0;
+    background-position: 60% 0;
     opacity: 0.8;
 
 }
@@ -32,30 +32,33 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 15px;
+    padding: 5px;
+    margin-top: -99px;
 
 }
 h1 {
     text-align: center;
-    line-height: 150%;
-    max-width: 940px;
-    font-size: 56px;
+    line-height: 100%;
+    max-width: 1140px;
+    font-size: 36px;
+    margin-top: -99px;
 
 }
 p {
     text-align: center;
-    margin: 14px;
+    margin: 24px;
 
 }
 .button-contact {
 
-    padding: 14px 28px;
+    padding: 20px 28px;
     color: $terceira-dark;
     background-color: $ultima-cor;
-    border: 1;
+    border: 2;
     font-size: 20px;
     font-weight: 600;
     margin: 15px 0;
+    border-radius: 6px;
 }
 .button-contact:hover {
     animation: scaleButton 0.9s alternate infinite;
@@ -83,10 +86,7 @@ p {
     }  
  }
  @media screen and (max-width: 480px) {
+    font-size: 24px;
     
-    
 
-}
-
-
-
+}}
