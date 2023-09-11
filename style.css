@@ -202,4 +202,39 @@ img {
 a {
   cursor: pointer;
   text-decoration: none;
+}
+
+.about {
+  background-color: #010911;
+  overflow: hidden;
+  color: #fefbff;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+.about-content img {
+  max-width: 570px;
+}
+
+.about-content div {
+  flex: 1;
+}
+
+.about-description h2 {
+  font-size: 38px;
+  margin-bottom: 24px;
+}
+.about-description p {
+  margin-bottom: 14px;
+  line-height: 150%;
+}
+
+@media screen and (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=style.css.map */
