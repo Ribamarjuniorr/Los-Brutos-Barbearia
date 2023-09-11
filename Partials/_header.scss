@@ -86,4 +86,9 @@ i {
 .header-button {
     display: none;
 }
+@media screen and (max-width: 390px) {
+    .header-logo img {
+     width: 300px;
+    }
+}
 }

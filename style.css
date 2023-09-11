@@ -79,6 +79,11 @@ i {
     display: none;
   }
 }
+@media screen and (max-width: 768px) and (max-width: 390px) {
+  .header-logo img {
+    width: 300px;
+  }
+}
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -157,12 +162,20 @@ p {
     min-height: 60vh;
   }
   .hero h1 {
-    font-size: 14px;
+    font-size: 20px;
     padding: 0 14px;
-    width: 100%;
+    width: 80%;
   }
   .hero p {
     font-size: 14px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .hero h1 {
+    font-size: 20px;
+  }
+  .hero p {
+    font-size: 12px;
   }
 }
 body {
