@@ -1,0 +1,92 @@
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 8px;
+
+}
+.bg-home {
+    position: relative;
+}
+.bg-home::before {
+    content:'';
+    display: block;
+    position: absolute;
+    background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #353436), url(../Assets/bg.svg);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    opacity: 0.8;
+
+}
+.hero {
+
+    color: $terceira-cor;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+
+}
+h1 {
+    text-align: center;
+    line-height: 150%;
+    max-width: 940px;
+    font-size: 56px;
+
+}
+p {
+    text-align: center;
+    margin: 14px;
+
+}
+.button-contact {
+
+    padding: 14px 28px;
+    color: $terceira-dark;
+    background-color: $ultima-cor;
+    border: 1;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 15px 0;
+}
+.button-contact:hover {
+    animation: scaleButton 0.9s alternate infinite;
+
+}
+@keyframes scaleButton {
+    from { transform:  scale(1);
+
+    } to { transform:  scale(1.07);
+
+}
+}
+ @media screen and (max-width: 768px){
+    .hero {
+        min-height: 60vh;
+
+        h1{
+            font-size: 14px;
+            padding: 0 14px;
+            width: 100%;
+        }
+        p {
+            font-size: 14px;
+        }
+    }  
+ }
+ @media screen and (max-width: 480px) {
+    
+    
+
+}
+
+
+
