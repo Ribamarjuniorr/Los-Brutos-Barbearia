@@ -76,9 +76,10 @@ p {
         min-height: 60vh;
 
         h1{
-            font-size: 20px;
+            font-size: 24px;
             padding: 0 14px;
-            width: 80%;
+            width: 1;
+
         }
         p {
             font-size: 14px;
@@ -87,9 +88,189 @@ p {
  }
  @media screen and (max-width: 390px) {
    .hero h1{
-     font-size: 20px;
+     font-size: 18px;
 }
 .hero p {
-    font-size: 12px;
+    font-size: 10px;
 }
 }
+
+.about {
+    background-color: $auxiliar-ligth;
+    overflow: hidden;
+    color: $terceira-dark;
+
+}
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+
+    img {
+        max-width: 570px;
+    }
+
+}
+.about-content div {
+    flex: 1;
+
+}
+.about-description {
+    h2 {
+        font-size: 38px;
+        margin-bottom: 24px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+
+    }
+    p{
+        margin-bottom: 14px;
+        line-height: 150%;
+    }
+}
+@media screen and (max-width: 768px){
+.about-content{
+    flex-direction: column;
+}
+}
+
+.services {
+    background-color: $auxiliar-ligth;
+    color: $terceira-dark;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 58px 18px;
+}
+.services-content h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 15px;
+
+}
+.services-content p {
+    line-height: 150%;
+    margin-bottom: 15px;
+    text-align: center;
+    max-width: 785px;
+}
+.haircuts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    padding: 0 44px 34px 44px;
+}
+.haircut {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: $terceira-dark;
+    border-radius: 8px;
+    box-shadow: 0px -1px 17px -4px $ultima-cor;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        max-width: 358px;
+        transition: transform 0.2s;
+    }
+    .haircut img :hover {
+        transform: scale(1.2);
+        z-index: 1;
+    }
+    }
+    .haircut-info {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 14px;
+        background-color: $ultima-cor;
+        z-index: 99;
+    }
+    .haircut-info button {
+        color: $terceira-dark;
+        background-color: $primeira-ligth;
+        padding: 4px 8px;
+        border-radius: 4px;
+        border: 0;
+        cursor: default;
+
+    }
+    @media screen and (max-width: 768px) {
+        .haircuts {
+            flex-direction: column;
+         
+        }
+        .haircuts img {
+            max-width: 748px;
+        }
+
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 54px 0;
+        gap: 24px;
+        color: $terceira-dark;
+        background-color: $ultima-cor;
+      }
+      
+      .footer-icons {
+        display: flex;
+        gap: 18px;
+        color: $terceira-dark;
+      }
+      .footer img {
+        width: 100px;
+      }
+      
+      .btn-whatsapp {
+        position: fixed;
+        bottom: 14px;
+        right: 14px;
+        z-index: 99;
+      
+        img {
+            max-width: 54px;
+            transition: transform 0.4s;
+        }
+      
+        img:hover{
+            transform: scale(1.1);
+        }
+      }
+      
+      .btn-whatsapp .tootip-text {
+        visibility: hidden;
+        position: absolute;
+        width: 120px;
+        top: 8px;
+        left: -144px;
+        padding: 6px;
+        border-radius: 8px;
+        text-align: center;
+        background: $ultima-dark;
+        color: $terceira-dark;
+        opacity: 0;
+        transition: opacity 0.6s;
+      }
+      
+      .btn-whatsapp:hover .tootip-text {
+        visibility: visible;
+        opacity: 1;
+      }
+      
+      @media screen and (max-width: 768px) {
+        .btn-whatsapp {
+            img {
+                max-width: 44px;
+            }
+        }
+      }

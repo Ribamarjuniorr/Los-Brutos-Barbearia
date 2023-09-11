@@ -13,7 +13,7 @@ body{
     width: 100%;
     height: 100vh;
     position: relative;
-    background-color: $primeira-cor;
+    background-color: $auxiliar-ligth;
 
 }
 button {
@@ -32,39 +32,3 @@ a {
     text-decoration: none;
 }
 
-.about {
-    background-color: $primeira-cor;
-    overflow: hidden;
-    color: $terceira-dark;
-
-}
-.about-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 14px;
-
-    img {
-        max-width: 570px;
-    }
-
-}
-.about-content div {
-    flex: 1;
-
-}
-.about-description {
-    h2 {
-        font-size: 38px;
-        margin-bottom: 24px;
-    }
-    p{
-        margin-bottom: 14px;
-        line-height: 150%;
-    }
-}
-@media screen and (max-width: 768px){
-.about-content{
-    flex-direction: column;
-}
-}
