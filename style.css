@@ -11,7 +11,7 @@ header {
 
 .header-content {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-around;
 }
 
@@ -43,7 +43,7 @@ i {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 500px;
+  width: 400px;
 }
 
 .header-button {
@@ -53,6 +53,9 @@ i {
   border-radius: 5px;
   background-color: transparent;
   transition: background-color 0.6s;
+  display: flex;
+  align-self: flex-start;
+  margin-top: 40px;
 }
 
 .header-button:hover {
@@ -170,7 +173,7 @@ p {
     font-size: 14px;
   }
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 380px) {
   .hero h1 {
     font-size: 18px;
   }
@@ -234,7 +237,7 @@ p {
 
 .services-content p {
   line-height: 150%;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   text-align: center;
   max-width: 785px;
 }
@@ -253,16 +256,16 @@ p {
   flex-direction: column;
   background-color: #fefbff;
   border-radius: 8px;
-  box-shadow: 0px -1px 17px -4px #f4b137;
+  box-shadow: 0px -1px 16px -4px #f4b137;
   overflow: hidden;
 }
 .haircut img {
   width: 100%;
   max-width: 358px;
-  transition: transform 0.2s;
+  transition: transform 0.4s;
 }
 .haircut .haircut img :hover {
-  transform: scale(1.2);
+  transform: scale(1.3);
   z-index: 1;
 }
 
@@ -294,18 +297,15 @@ p {
 }
 .footer {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: 54px 0;
-  gap: 24px;
+  justify-content: space-around;
   color: #fefbff;
-  background-color: #f4b137;
+  background-color: #010911;
 }
 
 .footer-icons {
   display: flex;
-  gap: 18px;
+  gap: 4px;
   color: #fefbff;
 }
 

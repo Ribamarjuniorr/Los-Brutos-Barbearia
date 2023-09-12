@@ -86,7 +86,7 @@ p {
         }
     }  
  }
- @media screen and (max-width: 390px) {
+ @media screen and (max-width: 380px) {
    .hero h1{
      font-size: 18px;
 }
@@ -154,7 +154,7 @@ p {
 }
 .services-content p {
     line-height: 150%;
-    margin-bottom: 15px;
+    margin-bottom: 14px;
     text-align: center;
     max-width: 785px;
 }
@@ -171,16 +171,16 @@ p {
     flex-direction: column;
     background-color: $terceira-dark;
     border-radius: 8px;
-    box-shadow: 0px -1px 17px -4px $ultima-cor;
+    box-shadow: 0px -1px 16px -4px $ultima-cor;
     overflow: hidden;
 
     img {
         width: 100%;
         max-width: 358px;
-        transition: transform 0.2s;
+        transition: transform 0.4s;
     }
     .haircut img :hover {
-        transform: scale(1.2);
+        transform: scale(1.3);
         z-index: 1;
     }
     }
@@ -213,23 +213,23 @@ p {
     }
     .footer {
         display: flex;
-        flex-direction: column;
         align-items: center;
-        justify-content: center;
-        padding: 54px 0;
-        gap: 24px;
+        justify-content: space-around;
         color: $terceira-dark;
-        background-color: $ultima-cor;
+        background-color: $primeira-cor;
+        
+        
       }
       
       .footer-icons {
         display: flex;
-        gap: 18px;
+        gap: 4px;
         color: $terceira-dark;
       }
       .footer img {
         width: 100px;
       }
+      
       
       .btn-whatsapp {
         position: fixed;
