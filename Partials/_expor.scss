@@ -214,7 +214,10 @@ p {
     .footer {
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
+        flex-direction: column;
+        padding: 14px 0;
+        gap: 4;
         color: $terceira-dark;
         background-color: $primeira-cor;
         
@@ -223,11 +226,16 @@ p {
       
       .footer-icons {
         display: flex;
-        gap: 4px;
+        gap: 20px;
         color: $terceira-dark;
+        font-size: 12px;
       }
       .footer img {
         width: 100px;
+        margin-top: -25px;
+      }
+      .footer p {
+        margin-top: -30px;
       }
       
       
